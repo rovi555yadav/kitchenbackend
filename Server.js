@@ -21,10 +21,7 @@ app.use('/api/auth', authRoutes);
 
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://bobby555yadav:L7cBw7noz6veqevS@cluster0.6ikgsos.mongodb.net/', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => {
+mongoose.connect('mongodb+srv://bobby555yadav:L7cBw7noz6veqevS@cluster0.6ikgsos.mongodb.net/', {}).then(() => {
   console.log('Connected to MongoDB');
 }).catch((err) => {
   console.error('Failed to connect to MongoDB', err);
